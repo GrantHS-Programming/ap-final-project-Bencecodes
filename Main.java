@@ -1,12 +1,16 @@
 public class Main {
+
+    static String Aptitude="";
     public static void main(String[] args) {
-        int name=1;
-        while(name==1) {
+        int active=1;
+
+        while(active==1) {
             int generator = (int) (Math.random() * 101);
             if (generator >= 0 && generator <= 3) {
                 int extremeNum=(int) (Math.random() * 10);
                 if(extremeNum==0 ){
-                    System.out.println("Verdant Great Sun Physique");
+
+                    Aptitude="Verdant Great Sun Physique";
                 }
                 if(extremeNum==1 ){
                     System.out.println("Desolate Ancient Moon Physique");
@@ -37,7 +41,7 @@ public class Main {
                 }
 
 
-            } else if (generator >= 0 && generator <= 7) {
+            } else if (generator >= 0 && generator <= 10) {
                 System.out.println("A");
             } else if (generator >= 0 && generator <= 15) {
                 System.out.println("B");
