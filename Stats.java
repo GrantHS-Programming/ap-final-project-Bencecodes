@@ -6,16 +6,21 @@ public class Stats {
     private String Aptitude;
 
 
-    public Stats(String name,String Aptitude) {
-        this.name = name;
-        this.Aptitude=Aptitude;
+    public Stats() {
+        name=null;
+      Aptitude=null;
         lifeSpan = 100;
         rank = 0;
 
     }
 
-    public String printStats() {
-       return "---Stats---\nName: "+name+"\nCultivation rank: "+rank+"\nAptitude: "+Aptitude+"\nLifespan: "+lifeSpan;
+    public void printStats() {
+        System.out.println("---Stats---\nName: "+name+"\nCultivation rank: "+rank+"\nAptitude: "+Aptitude+"\nLifespan: "+lifeSpan);
     }
-
+public void ChangeAptitude(String aptitude){
+        Aptitude=aptitude;
+}
+public void ChangeName(String Name){
+        name=Name;
+}
 }
